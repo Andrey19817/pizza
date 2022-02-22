@@ -1,0 +1,265 @@
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+    height: 800px;
+    position: relative;
+    background-image: url(./img/tekstura-doski-derevo.jpg);
+    background-size: cover;
+    box-shadow: 0 0 10px 10px black;
+}
+.container1 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.containerOrderViewArea {
+    padding: 0px 10px 0px 30px;
+    width: 50%;
+    height: 100%;
+    background-color: #DD8441;
+    background-size: cover;
+    box-shadow: 0 0 10px 10px black;
+}
+.headerViewArea{
+font-size: 35px;
+color: #CA2F00;
+}
+.orderViewArea {
+    height: 80%;
+    padding-bottom: 5px;
+}
+.cost {
+    margin-top: 10px;
+    font-size: 35px;
+    color: #CA2F00;
+}
+p{
+    color: #CA2F00;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.orderDisplay {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/960x.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px 10px black;
+}
+.containerPiece1{
+    width: 100%;
+    height: 100%;
+    
+}
+.containerPiece2{
+    width: 100%;
+    height: 100%;
+    
+}
+.piece1{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(22, 156, 150);
+    opacity: 0.5;
+    box-shadow: 0 0 20px black;
+}
+.piece2{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(22, 156, 150);
+    opacity: 0.5;
+    box-shadow: 0 0 20px black;
+}
+.piece3{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(22, 156, 150);
+    opacity: 0.5;
+    box-shadow: 0 0 20px black;
+}
+.piece4{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(22, 156, 150);
+    opacity: 0.5;
+    box-shadow: 0 0 20px black;
+}
+
+.order {
+    width: 40%;
+    height: 15%;
+    border-radius: 10%;
+    position: absolute;
+    margin:270px 45% 0px;
+    background-image:url(./img/960x.jpg);
+    font-size: 30px;
+    color: #A4BF2E;
+    box-shadow: 0 0 15px 10px black;
+    cursor: pointer;
+}
+.order:hover{
+    box-shadow: 0 0 5px 5px black;
+    transform: scale(0.99);
+}
+.containerElements {
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.headerFundamentals{
+    font-size: 35px;
+    color: #F2DF9F;
+}
+
+.fundamentals, .ingredients-1, .ingredients-2, .sauce  {
+    height: 300px;
+    margin: 0px 10px 5px 5px;
+}
+.fundament:hover{
+    transform: scale(1.1);
+}
+.ingridient_1:hover{
+    transform: scale(1.1);
+}
+.ingridient_2:hover{
+    transform: scale(1.1);
+}
+.ingridient_3:hover{
+    transform: scale(1.1);
+}
+.ingridient_1, .ingridient_2, .ingridient_3, .fundament{
+    color: #F2DF9F;
+    font-size: 20px;
+    cursor: pointer;
+}
+.pieceColor{
+    opacity: 0;
+}
+
+.modalWindow{
+    width: 50%;
+    height: 40%;
+    background-color: brown;
+    z-index: 10;
+    margin: 160px 25%;
+    background-image: url(./img/dae4e6209ad977e161d156b87d4a7655.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 30px 10px black;
+    position: absolute;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+.modalWindow_text{
+    width: 80%;
+    text-align: center;
+    font-size: 25px;
+    margin:20px auto;
+    color: #f7ae11;
+}
+.modalWindow_text_2{
+    margin: 20% auto;
+    font-size: 30px;
+    color: #A4BF2E;
+}
+
+.noActive{
+    z-index: -1;
+    opacity: 0;
+    margin: -100px -100px;
+}
+.active{
+    color: rgb(84, 207, 12);
+    transform: scale(1.1);
+}
+.wrapperActive{
+    opacity: 0.5;
+    z-index: 0;
+    background-color: rgb(109, 162, 175);
+}
+@media(max-width:845px){
+    .wrapper{
+        min-width: 100%;
+        min-height: 1400px;
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+.container1{
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+.containerOrderViewArea{
+    min-width: 100%;
+    max-height: 400px;
+    padding-bottom: 10px;
+}
+.orderDisplay{
+    min-width: 100%;
+    min-height: 200px;
+}
+
+.modalWindow{
+    height: 30%;
+}
+}
+@media(max-width:320px){
+    .wrapper{
+        min-width: 100%;
+        min-height: 1800px;
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+.container1{
+    flex-direction: column-reverse;
+    overflow: hidden;
+    height: 30%;
+}
+.containerOrderViewArea{
+    min-width: 100%;
+    max-height: 400px;
+    padding-bottom: 10px;
+}
+.orderDisplay{
+    min-width: 100%;
+    min-height: 300px;
+    max-height: 200px;
+    justify-content: center;
+}
+
+.modalWindow{
+    height: 15%;
+    margin: 160px 17%;
+}
+.headerViewArea{
+    font-size: 20px;
+}
+.containerOrderViewArea{
+    padding:10px;
+}
+.headerFundamentals{
+    font-size: 30px;
+}
+.cost{
+    font-size:20px ;
+}
+.modalWindow_text{
+    font-size: 15px;
+}
+.modalWindow_text_2{
+    font-size: 15px;
+}
+.order{
+    font-size: 15px;
+    margin-top:70%;
+    margin-left: 30%;
+}
+}
